@@ -28,3 +28,6 @@ yarn-error.log*
 *.tsbuildinfo
 
 .vercel
+
+# raw manual manuscript source (not for public repo)
+/manual-source
