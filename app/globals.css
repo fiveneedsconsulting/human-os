@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-fraunces: 'Fraunces', serif;
+  --font-inter: 'Inter', sans-serif;
+  --font-plex-mono: 'IBM Plex Mono', monospace;
+}
+
+body {
+  background-color: #E9E6DD;
+  color: #1B2420;
+}
+
+@keyframes needlePulse {
+  0%, 100% { opacity: 0.55; }
+  50% { opacity: 1; }
+}
+.needle-tip { animation: needlePulse 3.2s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .needle-tip { animation: none; }
+  * { transition-duration: 0.01ms !important; }
+}
