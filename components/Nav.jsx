@@ -9,8 +9,8 @@ export default function Nav() {
           <Image
             src="/logo.png"
             alt="Five Needs Consulting"
-            width={83}
-            height={64}
+            width={124}
+            height={96}
             priority
           />
         </Link>
