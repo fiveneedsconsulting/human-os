@@ -6,6 +6,10 @@ export const metadata = {
   title: "Human OS | Five Needs Consulting",
   description:
     "A practical operating manual for understanding yourself and the people around you — built by Five Needs Consulting.",
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({ children }) {

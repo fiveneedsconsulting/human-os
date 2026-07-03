@@ -86,8 +86,8 @@ function Gauge({ value, size = 260 }) {
       <text x={arcEnd.x + 4} y={arcEnd.y + 18} textAnchor="end" fontFamily="var(--font-plex-mono)" fontSize="9" fill="#4A544C" letterSpacing="0.5">HIGH</text>
 
       <g style={{ transform: `rotate(${angle}deg)`, transformOrigin: `${cx}px ${cy}px`, transition: "transform 1.1s cubic-bezier(0.22, 1, 0.36, 1)" }}>
-        <line x1={cx} y1={cy} x2={cx} y2={cy - r + 22} stroke="#2F6E62" strokeWidth="3" strokeLinecap="round" />
-        <circle cx={cx} cy={cy - r + 22} r="4" fill="#2F6E62" className="needle-tip" />
+        <line x1={cx} y1={cy} x2={cx} y2={cy - r + 22} stroke="#0067D6" strokeWidth="3" strokeLinecap="round" />
+        <circle cx={cx} cy={cy - r + 22} r="4" fill="#0067D6" className="needle-tip" />
       </g>
       <circle cx={cx} cy={cy} r="7" fill="#1B2420" />
       <circle cx={cx} cy={cy} r="3" fill="#C79A5C" />
