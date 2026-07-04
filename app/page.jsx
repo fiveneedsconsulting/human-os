@@ -74,16 +74,26 @@ export default function Home() {
         <h2 className="font-display text-3xl mt-3 mb-6">Human OS</h2>
         <p className="font-body leading-relaxed text-inkSoft mb-8 max-w-xl">
           Human OS is a working manual for understanding yourself and the
-          people you lead — built from the ground up as a set of practical
-          instruments. Read the frameworks as they come online, and take
-          the calibrations to see where you actually fall.
+          people you lead — nine chapters built as a stack of layers, from
+          your physical foundation up to the skills you can deliberately
+          upgrade, with practical instruments built into the chapters where
+          they're relevant.
         </p>
-        <Link
-          href="/tools"
-          className="inline-flex items-center gap-2 px-6 py-3 rounded-sm bg-signal text-canvas font-body font-medium text-sm hover:bg-signalDark transition-colors"
-        >
-          Take an assessment <ArrowRight size={16} />
-        </Link>
+        <div className="flex flex-wrap items-center gap-4">
+          <Link
+            href="/manual"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-sm bg-signal text-canvas font-body font-medium text-sm hover:bg-signalDark transition-colors"
+          >
+            Read the manual <ArrowRight size={16} />
+          </Link>
+          <Link
+            href="/tools"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-sm border font-body font-medium text-sm text-ink hover:border-brass transition-colors"
+            style={{ borderColor: "#B9B2A0" }}
+          >
+            Take an assessment
+          </Link>
+        </div>
       </section>
 
       {/* Book */}

@@ -16,7 +16,7 @@ export default function Nav() {
         </Link>
         <nav className="flex items-center gap-6 font-body text-sm text-inkSoft">
           <Link href="/#about" className="hover:text-ink transition-colors">About</Link>
-          <Link href="/#human-os" className="hover:text-ink transition-colors">Human OS</Link>
+          <Link href="/manual" className="hover:text-ink transition-colors">Manual</Link>
           <Link href="/tools" className="hover:text-ink transition-colors">Tools</Link>
           <Link
             href="/#book"
