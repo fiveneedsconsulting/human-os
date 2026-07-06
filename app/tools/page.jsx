@@ -16,6 +16,13 @@ const TOOLS = [
       "A 5-area rating across the most common hardware leaks — sleep, fuel, movement, stress recovery, and pain — that surfaces your biggest drain and a first move to fix it.",
     status: "live",
   },
+  {
+    slug: "state-reactivity-scan",
+    name: "2-Minute State + Reactivity Scan",
+    description:
+      "A 5-area rating across the most common nervous-system patterns — survival activation, shutdown, escalation, slow recovery, and fawning — that surfaces your starting layer and a first move.",
+    status: "live",
+  },
   // Add future Human OS modules here following the same shape.
 ];
 

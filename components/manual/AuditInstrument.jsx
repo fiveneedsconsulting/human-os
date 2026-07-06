@@ -63,6 +63,7 @@ export default function AuditInstrument({
   scaleHigh = DEFAULT_SCALE_HIGH,
   dimensions,
   tieBreakOrder,
+  patterns,
   footerNote,
 }) {
   const [ratings, setRatings] = useState(() =>
@@ -82,6 +83,13 @@ export default function AuditInstrument({
   }, [ratings, dimensions, tieBreakOrder]);
 
   const top = ranked[0];
+
+  const matchedPatterns = useMemo(() => {
+    if (!patterns) return [];
+    return patterns.filter((p) =>
+      p.keys.every((k) => (ratings[k] || 0) >= (p.threshold || 4))
+    );
+  }, [ratings, patterns]);
 
   const setRating = (key, value) => {
     setRatings((prev) => ({ ...prev, [key]: value }));
@@ -147,12 +155,25 @@ export default function AuditInstrument({
             ))}
           </div>
 
-          <div className="rounded-sm p-6 mb-8 border bg-panel" style={{ borderColor: "#B9B2A0" }}>
+          <div className="rounded-sm p-6 mb-6 border bg-panel" style={{ borderColor: "#B9B2A0" }}>
             <p className="font-body text-sm text-inkSoft mb-2">
               Highest score: <strong className="text-ink">{top.label}</strong>
             </p>
             <p className="font-body text-sm leading-relaxed text-inkSoft">{top.firstMove}</p>
           </div>
+
+          {matchedPatterns.map((p, i) => (
+            <div
+              key={i}
+              className="rounded-sm p-6 mb-6 border-2"
+              style={{ borderColor: "#A8783A", backgroundColor: "#DED9CB" }}
+            >
+              <p className="font-mono text-[10px] uppercase tracking-widest mb-2 text-brass">
+                Pattern worth naming
+              </p>
+              <p className="font-body text-sm leading-relaxed text-ink">{p.note}</p>
+            </div>
+          ))}
 
           <button
             onClick={reset}

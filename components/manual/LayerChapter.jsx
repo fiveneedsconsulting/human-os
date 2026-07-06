@@ -43,10 +43,12 @@ export default function LayerChapter({ meta, content, toolCallout }) {
       </div>
 
       {toolCallout && (
-        <div className="mt-6 max-w-2xl">
-          <ToolCallout href={toolCallout.href} label={toolCallout.label}>
-            {toolCallout.body}
-          </ToolCallout>
+        <div className="mt-6 max-w-2xl space-y-4">
+          {(Array.isArray(toolCallout) ? toolCallout : [toolCallout]).map((tc) => (
+            <ToolCallout key={tc.href} href={tc.href} label={tc.label}>
+              {tc.body}
+            </ToolCallout>
+          ))}
         </div>
       )}
 
