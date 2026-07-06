@@ -23,6 +23,13 @@ const TOOLS = [
       "A 5-area rating across the most common nervous-system patterns — survival activation, shutdown, escalation, slow recovery, and fawning — that surfaces your starting layer and a first move.",
     status: "live",
   },
+  {
+    slug: "needs-scan",
+    name: "2-Minute Needs Scan",
+    description:
+      "A 5-area rating across the Five Needs Engine — Safety, Connection, Competence, Autonomy, Meaning — that surfaces your starting need and a first move.",
+    status: "live",
+  },
   // Add future Human OS modules here following the same shape.
 ];
 

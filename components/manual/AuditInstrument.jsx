@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useMemo } from "react";
+import Link from "next/link";
 import { ArrowRight, RotateCcw } from "lucide-react";
 
 const DEFAULT_SCALE_LOW = "No problem";
@@ -64,6 +65,7 @@ export default function AuditInstrument({
   dimensions,
   tieBreakOrder,
   patterns,
+  advisory,
   footerNote,
 }) {
   const [ratings, setRatings] = useState(() =>
@@ -126,6 +128,28 @@ export default function AuditInstrument({
               />
             ))}
           </div>
+
+          {advisory && (
+            <div
+              className="rounded-sm p-5 mb-8 border"
+              style={{ borderColor: "#A8783A", backgroundColor: "#DED9CB" }}
+            >
+              <p className="font-body text-sm leading-relaxed text-ink">
+                {advisory.text}
+                {advisory.href && (
+                  <>
+                    {" "}
+                    <Link
+                      href={advisory.href}
+                      className="text-signal underline hover:text-signalDark"
+                    >
+                      {advisory.label || "Open tool"}
+                    </Link>
+                  </>
+                )}
+              </p>
+            </div>
+          )}
 
           <button
             onClick={() => setStage("results")}
