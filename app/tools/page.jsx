@@ -13,7 +13,7 @@ const TOOLS = [
     slug: "energy-audit",
     name: "2-Minute Energy Audit",
     description:
-      "A 15-question audit across the five most common hardware leaks — sleep, fuel, movement, stress recovery, and pain — that surfaces your biggest drain and a first move to fix it.",
+      "A 5-area rating across the most common hardware leaks — sleep, fuel, movement, stress recovery, and pain — that surfaces your biggest drain and a first move to fix it.",
     status: "live",
   },
   // Add future Human OS modules here following the same shape.
