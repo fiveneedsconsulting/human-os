@@ -9,6 +9,13 @@ const TOOLS = [
       "A 15-question self-calibration on how your nervous system processes input — sound, light, mood, meaning. Grounded in Environmental Sensitivity research.",
     status: "live",
   },
+  {
+    slug: "energy-audit",
+    name: "2-Minute Energy Audit",
+    description:
+      "A 15-question audit across the five most common hardware leaks — sleep, fuel, movement, stress recovery, and pain — that surfaces your biggest drain and a first move to fix it.",
+    status: "live",
+  },
   // Add future Human OS modules here following the same shape.
 ];
 
