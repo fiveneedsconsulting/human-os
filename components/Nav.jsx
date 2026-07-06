@@ -12,6 +12,7 @@ export default function Nav() {
             width={124}
             height={96}
             priority
+            className="border-2 border-black"
           />
         </Link>
         <nav className="flex items-center gap-6 font-body text-sm text-inkSoft">

@@ -6,7 +6,7 @@ export default function Home() {
     <div>
       {/* Mission */}
       <section className="max-w-3xl mx-auto px-5 py-16 sm:py-24">
-        <span className="font-mono text-[10px] tracking-widest uppercase text-brass">
+        <span className="font-mono text-sm tracking-widest uppercase text-brass">
           Five Needs Consulting, LLC
         </span>
         <h1 className="font-display text-4xl sm:text-5xl leading-tight mt-4 mb-6">
@@ -43,7 +43,7 @@ export default function Home() {
         style={{ borderColor: "#B9B2A0", backgroundColor: "#DED9CB" }}
       >
         <div className="max-w-3xl mx-auto px-5 py-16">
-          <span className="font-mono text-[10px] tracking-widest uppercase text-brass">
+          <span className="font-mono text-sm tracking-widest uppercase text-brass">
             About
           </span>
           <h2 className="font-display text-3xl mt-3 mb-6">
@@ -68,7 +68,7 @@ export default function Home() {
 
       {/* Human OS */}
       <section id="human-os" className="max-w-3xl mx-auto px-5 py-16">
-        <span className="font-mono text-[10px] tracking-widest uppercase text-brass">
+        <span className="font-mono text-sm tracking-widest uppercase text-brass">
           The manual
         </span>
         <h2 className="font-display text-3xl mt-3 mb-6">Human OS</h2>
@@ -103,7 +103,7 @@ export default function Home() {
         style={{ borderColor: "#B9B2A0", backgroundColor: "#DED9CB" }}
       >
         <div className="max-w-3xl mx-auto px-5 py-16">
-          <span className="font-mono text-[10px] tracking-widest uppercase text-brass">
+          <span className="font-mono text-sm tracking-widest uppercase text-brass">
             Start a conversation
           </span>
           <h2 className="font-display text-3xl mt-3 mb-6">
