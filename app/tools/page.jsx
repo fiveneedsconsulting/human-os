@@ -30,6 +30,20 @@ const TOOLS = [
       "A 5-area rating across the Five Needs Engine — Safety, Connection, Competence, Autonomy, Meaning — that surfaces your starting need and a first move.",
     status: "live",
   },
+  {
+    slug: "defaults-friction-scan",
+    name: "2-Minute Defaults + Friction Scan",
+    description:
+      "A quick forced-choice read on your I/E, S/N, T/F, and J/P leans, plus which stress behaviors show up under pressure.",
+    status: "live",
+  },
+  {
+    slug: "drivers-calibration",
+    name: "Drivers Calibration",
+    description:
+      "A 20-question calibration across all four preference dichotomies, with a combined lean profile and a translation script for each.",
+    status: "live",
+  },
   // Add future Human OS modules here following the same shape.
 ];
 
