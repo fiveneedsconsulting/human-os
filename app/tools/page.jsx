@@ -44,6 +44,13 @@ const TOOLS = [
       "A 20-question calibration across all four preference dichotomies, with a combined lean profile and a translation script for each.",
     status: "live",
   },
+  {
+    slug: "script-audit",
+    name: "2-Minute Script Audit",
+    description:
+      "A 4-area rating across the most common habit traps — relief, control, disconnection, and chaos scripts — that surfaces your starting target: one specific cue-behavior-payoff loop to redesign.",
+    status: "live",
+  },
   // Add future Human OS modules here following the same shape.
 ];
 
