@@ -226,13 +226,12 @@ export default function DriversCalibration() {
                 <button
                   key={opt.pole}
                   onClick={() => selectPole(opt.pole)}
-                  className={`w-full text-left px-5 py-5 rounded-sm font-display text-lg leading-snug flex items-start justify-between gap-3 border transition-colors focus:outline-none focus:ring-2 focus:ring-brass focus:ring-offset-2 ${
+                  className={`w-full text-left px-5 py-5 rounded-sm font-display text-lg leading-snug border transition-colors focus:outline-none focus:ring-2 focus:ring-brass focus:ring-offset-2 ${
                     selected ? "bg-signal text-canvas border-signal" : "bg-panel text-ink hover:border-brass"
                   }`}
                   style={{ borderColor: selected ? undefined : "#B9B2A0" }}
                 >
-                  <span>{opt.text}</span>
-                  <span className="font-mono text-xs opacity-70 shrink-0 mt-1">{opt.pole}</span>
+                  {opt.text}
                 </button>
               );
             })}
