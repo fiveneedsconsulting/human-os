@@ -1,6 +1,7 @@
 "use client";
 
 import AuditInstrument from "@/components/manual/AuditInstrument";
+import { getFirstMove } from "@/content/manual/firstMoves";
 
 const DIMENSIONS = [
   {
@@ -53,6 +54,7 @@ export default function EnergyAudit() {
       scaleHigh="Serious problem"
       dimensions={DIMENSIONS}
       tieBreakOrder={TIE_BREAK_ORDER}
+      exercise={getFirstMove("hardware")}
       footerNote="This is a self-reflection tool tied to Chapter 2 of the Human OS manual — not a diagnostic instrument, and not a substitute for medical advice."
     />
   );

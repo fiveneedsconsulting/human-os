@@ -3,6 +3,7 @@
 import React, { useState, useMemo } from "react";
 import Link from "next/link";
 import { ArrowRight, RotateCcw } from "lucide-react";
+import FirstMove from "@/components/manual/FirstMove";
 
 const DEFAULT_SCALE_LOW = "No problem";
 const DEFAULT_SCALE_HIGH = "Serious problem";
@@ -66,6 +67,7 @@ export default function AuditInstrument({
   tieBreakOrder,
   patterns,
   advisory,
+  exercise,
   footerNote,
 }) {
   const [ratings, setRatings] = useState(() =>
@@ -198,6 +200,12 @@ export default function AuditInstrument({
               <p className="font-body text-sm leading-relaxed text-ink">{p.note}</p>
             </div>
           ))}
+
+          {exercise && (
+            <div className="mb-6">
+              <FirstMove exercise={exercise} />
+            </div>
+          )}
 
           <button
             onClick={reset}

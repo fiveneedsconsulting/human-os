@@ -2,6 +2,8 @@
 
 import React, { useState, useMemo } from "react";
 import { ArrowRight, ArrowLeft, RotateCcw } from "lucide-react";
+import FirstMove from "@/components/manual/FirstMove";
+import { getFirstMove } from "@/content/manual/firstMoves";
 
 const SECTIONS = {
   ie: {
@@ -299,6 +301,10 @@ export default function DriversCalibration() {
                 </div>
               );
             })}
+          </div>
+
+          <div className="mb-6">
+            <FirstMove exercise={getFirstMove("drivers")} />
           </div>
 
           <button

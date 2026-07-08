@@ -7,10 +7,13 @@ import {
   ToolCallout,
   ChapterNav,
 } from "@/components/manual/ChapterShell";
+import FirstMove from "@/components/manual/FirstMove";
+import { getFirstMove } from "@/content/manual/firstMoves";
 
 export default function LayerChapter({ meta, content, toolCallout }) {
   const { number, title, subtitle, slug } = meta;
   const { tagline, intro, controls, howItFails, whyItFails, maintenancePlan } = content;
+  const firstMove = getFirstMove(slug);
 
   return (
     <div className="max-w-3xl mx-auto px-5 py-16">
@@ -68,6 +71,12 @@ export default function LayerChapter({ meta, content, toolCallout }) {
         ))}
       </div>
       <StoryBox>{maintenancePlan.story}</StoryBox>
+
+      {firstMove && (
+        <div className="mt-10 max-w-2xl">
+          <FirstMove exercise={firstMove} />
+        </div>
+      )}
 
       <ChapterNav slug={slug} />
     </div>

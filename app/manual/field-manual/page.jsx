@@ -6,7 +6,9 @@ import {
   StoryBox,
   ChapterNav,
 } from "@/components/manual/ChapterShell";
+import FirstMove from "@/components/manual/FirstMove";
 import { getChapterBySlug } from "@/lib/manualChapters";
+import { getFirstMove } from "@/content/manual/firstMoves";
 
 const SYMPTOM_PROFILES = [
   { name: "Hardware — Energy Budget", body: "Low patience, low focus, “everything feels harder than it should,” afternoon crash, brain fog, wired-but-tired. Root: sleep, fuel, hydration, movement, recovery." },
@@ -165,6 +167,10 @@ export default function FieldManual() {
           shutdown, Hardware is carrying sleep debt, Firmware is wired. First move:
           phone charges outside the bedroom; replace with a 5-minute wind-down.
         </StoryBox>
+      </div>
+
+      <div className="mt-10 max-w-2xl">
+        <FirstMove exercise={getFirstMove(meta.slug)} />
       </div>
 
       <ChapterNav slug={meta.slug} />

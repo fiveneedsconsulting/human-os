@@ -1,6 +1,7 @@
 "use client";
 
 import AuditInstrument from "@/components/manual/AuditInstrument";
+import { getFirstMove } from "@/content/manual/firstMoves";
 
 const DIMENSIONS = [
   {
@@ -59,6 +60,7 @@ export default function StateReactivityScan() {
       scaleHigh="Serious problem"
       dimensions={DIMENSIONS}
       patterns={PATTERNS}
+      exercise={getFirstMove("firmware")}
       footerNote="This is a self-reflection tool tied to Chapter 3 of the Human OS manual — not a diagnostic instrument, and not a substitute for professional care."
     />
   );

@@ -5,7 +5,9 @@ import {
   PatternCard,
   ChapterNav,
 } from "@/components/manual/ChapterShell";
+import FirstMove from "@/components/manual/FirstMove";
 import { getChapterBySlug } from "@/lib/manualChapters";
+import { getFirstMove } from "@/content/manual/firstMoves";
 
 const LAYERS = [
   { name: "Hardware", body: "Body / Energy — sleep, nutrition, movement, illness, pain, and basic energy availability. When hardware is failing, everything else becomes harder and louder." },
@@ -158,6 +160,10 @@ export default function ReadMeFirst() {
           changed, what didn't, and what's the next smallest test?
         </p>
       </Prose>
+
+      <div className="mt-10 max-w-2xl">
+        <FirstMove exercise={getFirstMove(meta.slug)} />
+      </div>
 
       <ChapterNav slug={meta.slug} />
     </div>

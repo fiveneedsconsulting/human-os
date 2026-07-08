@@ -1,6 +1,7 @@
 "use client";
 
 import AuditInstrument from "@/components/manual/AuditInstrument";
+import { getFirstMove } from "@/content/manual/firstMoves";
 
 const DIMENSIONS = [
   {
@@ -43,6 +44,7 @@ export default function ScriptAudit() {
       scaleLow="No problem"
       scaleHigh="Serious problem"
       dimensions={DIMENSIONS}
+      exercise={getFirstMove("scripts")}
       footerNote="This is a self-reflection tool tied to Chapter 6 of the Human OS manual — not a diagnostic instrument. The rule: keep the payoff, change the script. Environment beats willpower."
     />
   );

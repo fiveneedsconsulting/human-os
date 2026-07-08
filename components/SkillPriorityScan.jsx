@@ -2,6 +2,8 @@
 
 import React, { useState, useMemo } from "react";
 import { ArrowRight, RotateCcw } from "lucide-react";
+import FirstMove from "@/components/manual/FirstMove";
+import { getFirstMove } from "@/content/manual/firstMoves";
 
 const MODULES = [
   {
@@ -232,6 +234,10 @@ export default function SkillPriorityScan() {
               Start here: <strong className="text-ink">{top.label}</strong>
             </p>
             <p className="font-body text-sm leading-relaxed text-inkSoft">{top.firstMove}</p>
+          </div>
+
+          <div className="mb-6">
+            <FirstMove exercise={getFirstMove("upgrades")} />
           </div>
 
           <button

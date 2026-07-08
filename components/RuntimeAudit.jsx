@@ -1,6 +1,7 @@
 "use client";
 
 import AuditInstrument from "@/components/manual/AuditInstrument";
+import { getFirstMove } from "@/content/manual/firstMoves";
 
 const DIMENSIONS = [
   {
@@ -46,6 +47,7 @@ export default function RuntimeAudit() {
       scaleHigh="Serious problem"
       dimensions={DIMENSIONS}
       tieBreakOrder={TIE_BREAK_ORDER}
+      exercise={getFirstMove("runtime")}
       footerNote="This is a self-reflection tool tied to Chapter 7 of the Human OS manual — not a diagnostic instrument. The rule: fix the runtime before you blame the character. Change the structure and behavior follows."
     />
   );

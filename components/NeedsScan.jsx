@@ -1,6 +1,7 @@
 "use client";
 
 import AuditInstrument from "@/components/manual/AuditInstrument";
+import { getFirstMove } from "@/content/manual/firstMoves";
 
 const DIMENSIONS = [
   {
@@ -57,6 +58,7 @@ export default function NeedsScan() {
       scaleHigh="Serious problem"
       dimensions={DIMENSIONS}
       advisory={ADVISORY}
+      exercise={getFirstMove("kernel")}
       footerNote="This is a self-reflection tool tied to Chapter 4 of the Human OS manual — not a diagnostic instrument, and not a substitute for professional care."
     />
   );
