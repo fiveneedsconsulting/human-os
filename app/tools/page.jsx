@@ -51,6 +51,13 @@ const TOOLS = [
       "A 4-area rating across the most common habit traps — relief, control, disconnection, and chaos scripts — that surfaces your starting target: one specific cue-behavior-payoff loop to redesign.",
     status: "live",
   },
+  {
+    slug: "runtime-audit",
+    name: "2-Minute Runtime Audit",
+    description:
+      "A 4-area rating across the structure of your week — anchors, buffers, role clarity, and needs coverage — that surfaces your starting point and a first move.",
+    status: "live",
+  },
   // Add future Human OS modules here following the same shape.
 ];
 
