@@ -58,6 +58,13 @@ const TOOLS = [
       "A 4-area rating across the structure of your week — anchors, buffers, role clarity, and needs coverage — that surfaces your starting point and a first move.",
     status: "live",
   },
+  {
+    slug: "skill-priority-scan",
+    name: "2-Minute Skill Priority Scan",
+    description:
+      "A 5-module scan — regulation, communication, boundaries, debugging, and attention — that surfaces which skill would change the most if you trained it, plus a first rep to install it.",
+    status: "live",
+  },
   // Add future Human OS modules here following the same shape.
 ];
 
