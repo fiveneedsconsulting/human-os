@@ -49,21 +49,32 @@ export default function Home() {
             About
           </span>
           <h2 className="font-display text-3xl mt-3 mb-6">
-            Built by an operator, not a theorist.
+            Twenty years of building leaders under pressure.
           </h2>
           <p className="font-body leading-relaxed text-inkSoft mb-4 max-w-xl">
-            I'm Jason Horton, a retired U.S. Army Major and a certified MBTI
-            practitioner. My work has always come down to the same question:
-            does this person understand themselves and the people around
-            them well enough to lead under real conditions — uncertainty,
-            stress, and consequence?
+            I'm Jason Horton, a retired U.S. Army Major. For more than two
+            decades I led soldiers — in hostile environments, in the training
+            simulations that prepare units for them, and across initial entry
+            and leader development programs where the whole job was turning
+            people into capable leaders on a deadline. I hold a master's
+            degree in Human Resource Development, am a certified MBTI
+            practitioner, and currently facilitate for Western Kentucky
+            University's Career and Professional Development department.
+          </p>
+          <p className="font-body leading-relaxed text-inkSoft mb-4 max-w-xl">
+            Two things become clear when you lead under those conditions.
+            Under pressure, people don't perform to their intentions — they
+            perform to their defaults. And defaults don't change because
+            someone delivered a good speech.
           </p>
           <p className="font-body leading-relaxed text-inkSoft max-w-xl">
-            Five Needs Consulting exists to bring that same discipline to
-            leadership development and organizational excellence work —
-            practical instruments over personality-test trivia, dignifying
-            language over clinical labels, and frameworks built to be used,
-            not just read.
+            That gap is what Five Needs Consulting exists to close. Durable
+            change takes what good training has always taken: an honest read
+            of where you actually are, one variable at a time, a clear
+            standard, and an after-action review you don't flinch from. A lot
+            of leadership development stops at insight, because insight is
+            comfortable. Rigor is what converts insight into capability — and
+            expecting that rigor of people is a form of respect, not severity.
           </p>
         </div>
       </section>
