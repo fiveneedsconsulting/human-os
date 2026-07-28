@@ -58,8 +58,8 @@ export default function Home() {
             and leader development programs where the whole job was turning
             people into capable leaders on a deadline. I hold a master's
             degree in Human Resource Development, am a certified MBTI
-            practitioner, and currently facilitate for Western Kentucky
-            University's Career and Professional Development department.
+            practitioner, and currently facilitate career and professional
+            development programming at a regional university.
           </p>
           <p className="font-body leading-relaxed text-inkSoft mb-4 max-w-xl">
             Two things become clear when you lead under those conditions.
