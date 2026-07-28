@@ -10,14 +10,16 @@ export default function Home() {
           Five Needs Consulting, LLC
         </span>
         <h1 className="font-display text-4xl sm:text-5xl leading-tight mt-4 mb-6">
-          Most dysfunction is a clarity problem.
+          Pressure doesn't reveal character. It reveals defaults.
         </h1>
         <p className="font-body text-lg leading-relaxed text-inkSoft mb-8 max-w-xl">
-          Five Needs Consulting helps leaders and teams see themselves and
-          each other clearly — through practical, instrument-style tools
-          instead of abstract theory. Leadership development and
-          organizational excellence, built on frameworks you can actually
-          apply under pressure.
+          Defaults are what your system reaches for first — under fatigue,
+          conflict, and uncertainty, before deliberate thought catches up.
+          They're not character flaws; they're predictable patterns you can
+          learn to read, in yourself and in the people you lead. Five Needs
+          Consulting helps leaders and teams do that work deliberately —
+          leadership development and organizational excellence built on
+          practical instruments, not abstract theory.
         </p>
         <div className="flex flex-wrap items-center gap-4">
           <Link
